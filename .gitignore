@@ -1,0 +1,40 @@
+# --- DATOS BIOMÉTRICOS Y MATERIAL CON DERECHOS: NUNCA AL REPOSITORIO ---
+# Galerías de referencia (embeddings faciales) y fotos de referencia
+*.npz
+*.pkl
+*.pickle
+referencias/
+!ejemplos/referencias/
+ejemplos/referencias/*
+!ejemplos/referencias/LEEME.md
+# Vídeos
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.m4v
+*.ts
+# Resultados del análisis (contienen nombres de personas por fotograma)
+resultados/
+transcripciones/
+texto_analizado/
+salidas/
+detecciones*.csv
+videos.csv
+# Modelos descargados
+.insightface/
+*.onnx
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+resultados_demo/

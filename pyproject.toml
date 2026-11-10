@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polface"
+version = "0.1.0"
+description = "Localización de personas en vídeo de televisión y descriptivos de visibilidad (herramienta de investigación)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Grupo PolCom, Universidad de Granada" }]
+keywords = ["comunicación política", "televisión", "reconocimiento facial"]
+dependencies = [
+    "numpy",
+    "pandas",
+    "opencv-python-headless",
+    "insightface",
+    "onnxruntime",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.52", "plotly"]
+transcripcion = ["faster-whisper"]
+texto = ["torch", "transformers", "detoxify"]
+gpu = ["onnxruntime-gpu"]      # sustituye a onnxruntime en equipos con GPU NVIDIA
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://wpd.ugr.es/~polcom/"
+Repository = "https://github.com/Pol-Com/PolFace"
+
+[project.scripts]
+polface = "polface.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+polface = ["assets/*.png"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

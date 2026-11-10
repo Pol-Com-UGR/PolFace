@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Si usas este software en una publicación, cítalo así."
+title: "PolFace: herramienta de localización de figuras políticas en las televisiones españolas"
+version: 0.1.0
+type: software
+license: MIT
+authors:
+  - family-names: "García Marín"
+    given-names: "Javier"
+    orcid: "https://orcid.org/0000-0002-2766-0266"
+    affiliation: "Universidad de Granada, Facultad de Ciencias Políticas y Sociología (grupo PolCom)"
+# Añade aquí al resto de personas que hayan contribuido al código, con su ORCID si lo tienen.
+repository-code: "https://github.com/Pol-Com/PolFace"
+# doi: "10.5281/zenodo.XXXXXXX"   # se obtiene al conectar el repositorio con Zenodo
+abstract: >-
+  Herramienta de investigación para localizar personas en vídeo de televisión
+  mediante reconocimiento facial y calcular descriptivos de visibilidad
+  (tiempo estimado en pantalla, tamaño de la cara, coapariciones).
+keywords:
+  - comunicación política
+  - televisión
+  - reconocimiento facial
+  - análisis de vídeo
+notes: >-
+  Proyecto PID2021-128272NB-I00 financiado por MICIU/AEI/10.13039/501100011033
+  y por FEDER, UE.
