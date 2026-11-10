@@ -10,7 +10,7 @@
 
 <p align="center"><b>Español</b> · <a href="README.en.md">English</a></p>
 
-> 🇬🇧 **English version:** [README.en.md](README.en.md). PolFace locates political figures in television video from your own photos and videos, and gives descriptive visibility statistics and an interactive dashboard (Spanish/English).
+> **English version:** [README.en.md](README.en.md). PolFace locates political figures in television video from your own photos and videos, and gives descriptive visibility statistics and an interactive dashboard (Spanish/English).
 
 # PolFace
 
@@ -155,7 +155,7 @@ PolFace está pensado para vídeos en cualquier idioma:
 | | Modelo | Idiomas declarados | Licencia |
 |---|---|---|---|
 | Sentimiento (por defecto) | [`lxyuan/distilbert-base-multilingual-cased-sentiments-student`](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student) | en, es, fr, de, it, pt, ar, hi, id, ms, ja, zh | Apache-2.0 |
-| Sentimiento (`--sentimiento cardiffnlp`) | [`cardiffnlp/twitter-xlm-roberta-base-sentiment`](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment) (entrenado con tuits) | ar, en, fr, de, hi, it, es, pt | no indicada en la ficha: compruébala |
+| Sentimiento (`--sentimiento cardiffnlp`) | [`cardiffnlp/twitter-xlm-roberta-base-sentiment`](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment) (entrenado con tuits) | ar, en, fr, de, hi, it, es, pt | ver la ficha del modelo |
 | Toxicidad | [Detoxify `multilingual`](https://github.com/unitaryai/detoxify) (XLM-RoBERTa base) | en, es, fr, it, pt, tr, ru | paquete Apache-2.0 |
 
 El **catalán, el euskera y el gallego** no están entre los idiomas validados de estos modelos, aunque Whisper sí los transcribe. Por defecto esos segmentos quedan sin puntuar.
@@ -207,11 +207,11 @@ Los tests no necesitan descargar modelos: usan un detector simulado y un vídeo 
 
 Si usas PolFace en una publicación, cítalo así (GitHub también ofrece «Citar este repositorio» en la columna derecha, a partir de [CITATION.cff](CITATION.cff)):
 
-> García Marín, J., Luengo, Ó. G., & Serrano Contreras, I. J. (2026). *PolFace: localización de figuras políticas en vídeo de televisión* (v0.1.0) [Software]. Grupo PolCom, Universidad de Granada. https://github.com/Pol-Com-UGR/PolFace
+> García Marín, J., García Luengo, Ó., & Serrano Contreras, I. J. (2026). *PolFace: localización de figuras políticas en vídeo de televisión* (v0.1.0) [Software]. Grupo PolCom, Universidad de Granada. https://github.com/Pol-Com-UGR/PolFace
 
 ```bibtex
 @software{garciamarin_polface_2026,
-  author  = {García Marín, Javier and Luengo, Óscar G. and Serrano Contreras, Ignacio Jesús},
+  author  = {García Marín, Javier and García Luengo, Óscar and Serrano Contreras, Ignacio Jesús},
   title   = {PolFace: localización de figuras políticas en vídeo de televisión},
   year    = {2026},
   version = {0.1.0},
@@ -221,6 +221,24 @@ Si usas PolFace en una publicación, cítalo así (GitHub también ofrece «Cita
 ```
 
 Cita también InsightFace.
+
+## Software y modelos de terceros
+
+PolFace se apoya en proyectos de código abierto. Si publicas resultados obtenidos con él, cita los que hayas usado. Cada uno tiene su propia licencia, indicada en su página.
+
+| Para qué | Proyecto | Enlace |
+|---|---|---|
+| Detección y reconocimiento facial (obligatorio) | InsightFace (modelo `buffalo_l`) | <https://github.com/deepinsight/insightface> |
+| Ejecución de los modelos | ONNX Runtime | <https://onnxruntime.ai> |
+| Lectura de vídeo e imagen | OpenCV | <https://opencv.org> |
+| Datos | NumPy, pandas | <https://numpy.org>, <https://pandas.pydata.org> |
+| Panel interactivo | Streamlit, Plotly | <https://streamlit.io>, <https://plotly.com/python/> |
+| Transcripción (opcional) | faster-whisper y Whisper de OpenAI | <https://github.com/SYSTRAN/faster-whisper>, <https://github.com/openai/whisper> |
+| Sentimiento (opcional) | `lxyuan/distilbert-base-multilingual-cased-sentiments-student`, `cardiffnlp/twitter-xlm-roberta-base-sentiment` | <https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student>, <https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment> |
+| Toxicidad (opcional) | Detoxify (`multilingual`) | <https://github.com/unitaryai/detoxify> |
+| Modelos de lenguaje | Transformers (Hugging Face), PyTorch | <https://huggingface.co/docs/transformers>, <https://pytorch.org> |
+
+**Importante:** el código de InsightFace es de código abierto, pero sus modelos preentrenados (como `buffalo_l`) se ofrecen solo para **investigación no comercial**. PolFace no incluye ningún modelo: se descargan al usarlo, de modo que la responsabilidad de respetar esas condiciones es de quien lo usa.
 
 ## Licencia
 

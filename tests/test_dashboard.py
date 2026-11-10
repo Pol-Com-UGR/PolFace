@@ -278,7 +278,7 @@ def test_app_buscador_de_carpetas(carpeta, tmp_path, monkeypatch):
     nombres = [b.label for b in at.button if b.key and b.key.startswith("carpeta_videos_dlg_h")]
     assert nombres == ["📁 hijo", "📁 otro"]
     at.button(key="carpeta_videos_dlg_h0").click().run()             # entra en «hijo»
-    # (AppTest repinta toda la app y no solo el diálogo; el resto del flujo se comprueba a mano)
+    # (AppTest repinta toda la app, no solo el diálogo: aquí solo se prueban los primeros pasos)
     assert at.session_state["carpeta_videos_dlg"] == str(tmp_path / "hijo")
     assert not at.exception
 

@@ -154,7 +154,7 @@ PolFace is designed for videos in any language:
 | | Model | Declared languages | Licence |
 |---|---|---|---|
 | Sentiment (default) | [`lxyuan/distilbert-base-multilingual-cased-sentiments-student`](https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student) | en, es, fr, de, it, pt, ar, hi, id, ms, ja, zh | Apache-2.0 |
-| Sentiment (`--sentimiento cardiffnlp`) | [`cardiffnlp/twitter-xlm-roberta-base-sentiment`](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment) (trained on tweets) | ar, en, fr, de, hi, it, es, pt | not stated on the model card: check it |
+| Sentiment (`--sentimiento cardiffnlp`) | [`cardiffnlp/twitter-xlm-roberta-base-sentiment`](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment) (trained on tweets) | ar, en, fr, de, hi, it, es, pt | see the model card |
 | Toxicity | [Detoxify `multilingual`](https://github.com/unitaryai/detoxify) (XLM-RoBERTa base) | en, es, fr, it, pt, tr, ru | package Apache-2.0 |
 
 **Catalan, Basque and Galician** are not among the validated languages of these models, although Whisper does transcribe them. By default those segments are left unscored.
@@ -203,11 +203,11 @@ The tests do not need to download any model: they use a simulated detector and a
 
 If you use PolFace in a publication, please cite it as follows (GitHub also offers "Cite this repository" in the right-hand column, built from [CITATION.cff](CITATION.cff)):
 
-> García Marín, J., Luengo, Ó. G., & Serrano Contreras, I. J. (2026). *PolFace: locating political figures in television video* (v0.1.0) [Software]. PolCom group, University of Granada. https://github.com/Pol-Com-UGR/PolFace
+> García Marín, J., García Luengo, Ó., & Serrano Contreras, I. J. (2026). *PolFace: locating political figures in television video* (v0.1.0) [Software]. PolCom group, University of Granada. https://github.com/Pol-Com-UGR/PolFace
 
 ```bibtex
 @software{garciamarin_polface_2026,
-  author  = {García Marín, Javier and Luengo, Óscar G. and Serrano Contreras, Ignacio Jesús},
+  author  = {García Marín, Javier and García Luengo, Óscar and Serrano Contreras, Ignacio Jesús},
   title   = {PolFace: locating political figures in television video},
   year    = {2026},
   version = {0.1.0},
@@ -217,6 +217,24 @@ If you use PolFace in a publication, please cite it as follows (GitHub also offe
 ```
 
 Please also cite InsightFace.
+
+## Third-party software and models
+
+PolFace builds on open-source projects. If you publish results obtained with it, please cite the ones you used. Each has its own licence, stated on its page.
+
+| Purpose | Project | Link |
+|---|---|---|
+| Face detection and recognition (required) | InsightFace (`buffalo_l` model) | <https://github.com/deepinsight/insightface> |
+| Running the models | ONNX Runtime | <https://onnxruntime.ai> |
+| Video and image reading | OpenCV | <https://opencv.org> |
+| Data | NumPy, pandas | <https://numpy.org>, <https://pandas.pydata.org> |
+| Interactive dashboard | Streamlit, Plotly | <https://streamlit.io>, <https://plotly.com/python/> |
+| Transcription (optional) | faster-whisper and OpenAI Whisper | <https://github.com/SYSTRAN/faster-whisper>, <https://github.com/openai/whisper> |
+| Sentiment (optional) | `lxyuan/distilbert-base-multilingual-cased-sentiments-student`, `cardiffnlp/twitter-xlm-roberta-base-sentiment` | <https://huggingface.co/lxyuan/distilbert-base-multilingual-cased-sentiments-student>, <https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment> |
+| Toxicity (optional) | Detoxify (`multilingual`) | <https://github.com/unitaryai/detoxify> |
+| Language models | Transformers (Hugging Face), PyTorch | <https://huggingface.co/docs/transformers>, <https://pytorch.org> |
+
+**Important:** InsightFace's code is open source, but its pretrained models (such as `buffalo_l`) are offered for **non-commercial research only**. PolFace ships no model: they are downloaded when you use it, so respecting those terms is the responsibility of the user.
 
 ## Licence
 

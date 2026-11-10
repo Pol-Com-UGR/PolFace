@@ -9,15 +9,15 @@ authors:
     given-names: "Javier"
     orcid: "https://orcid.org/0000-0002-2766-0266"
     affiliation: "Universidad de Granada, Facultad de Ciencias Políticas y Sociología (grupo PolCom)"
-  - family-names: "Luengo"
-    given-names: "Óscar G."
+  - family-names: "García Luengo"
+    given-names: "Óscar"
+    orcid: "https://orcid.org/0000-0001-6597-6459"
     affiliation: "Universidad de Granada (grupo PolCom)"
   - family-names: "Serrano Contreras"
     given-names: "Ignacio Jesús"
+    orcid: "https://orcid.org/0000-0002-2399-0647"
     affiliation: "Universidad de Granada (grupo PolCom)"
-# Puedes añadir el ORCID de cada persona con la línea: orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
 repository-code: "https://github.com/Pol-Com-UGR/PolFace"
-# doi: "10.5281/zenodo.XXXXXXX"   # se obtiene al conectar el repositorio con Zenodo
 abstract: >-
   Herramienta de investigación para localizar personas en vídeo de televisión
   mediante reconocimiento facial y calcular descriptivos de visibilidad
