@@ -12,7 +12,7 @@
 
 # PolFace
 
-**PolFace: herramienta de localización de figuras políticas en las televisiones españolas.**
+**PolFace: herramienta de localización de figuras políticas en vídeo de televisión** (debates, informativos, programas…; funciona con cualquier vídeo y con las personas de las que aportes fotos).
 Software del proyecto de investigación PolFace, desarrollado por el grupo de investigación **PolCom** (Universidad de Granada).
 
 Herramienta de investigación para **localizar personas en vídeo de televisión** y obtener **descriptivos de visibilidad** (tiempo estimado en pantalla, tamaño de la cara, coapariciones). Tú aportas los vídeos y las fotos de las personas que quieres buscar; la herramienta hace el resto.
@@ -67,7 +67,7 @@ Con `PolFace.sh --completo` (o `PolFace.bat completo`) se instalan también la t
 Requiere Python 3.9 o superior.
 
 ```bash
-git clone https://github.com/Pol-Com/PolFace.git
+git clone https://github.com/Pol-Com-UGR/PolFace.git
 cd PolFace
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
@@ -203,7 +203,22 @@ Los tests no necesitan descargar modelos: usan un detector simulado y un vídeo 
 
 ## Cómo citar
 
-Ver [CITATION.cff](CITATION.cff). Si usas la herramienta en una publicación, cita también InsightFace.
+Si usas PolFace en una publicación, cítalo así (GitHub también ofrece «Citar este repositorio» en la columna derecha, a partir de [CITATION.cff](CITATION.cff)):
+
+> García Marín, J. (2026). *PolFace: localización de figuras políticas en vídeo de televisión* (v0.1.0) [Software]. Grupo PolCom, Universidad de Granada. https://github.com/Pol-Com-UGR/PolFace
+
+```bibtex
+@software{garciamarin_polface_2026,
+  author  = {García Marín, Javier},
+  title   = {PolFace: localización de figuras políticas en vídeo de televisión},
+  year    = {2026},
+  version = {0.1.0},
+  url     = {https://github.com/Pol-Com-UGR/PolFace},
+  note    = {Proyecto PID2021-128272NB-I00, MICIU/AEI/10.13039/501100011033 y FEDER, UE}
+}
+```
+
+Cita también InsightFace.
 
 ## Licencia
 
@@ -222,6 +237,6 @@ Este trabajo forma parte del proyecto **PID2021-128272NB-I00**, financiado por M
 **Pol.Com (Political Communication)**, Universidad de Granada: grupo de investigación sobre cómo la comunicación influye en los procesos políticos (medios tradicionales, redes sociales, polarización, algoritmos de análisis de texto y de visión por computador, populismo y debates electorales).
 
 - Web: <https://wpd.ugr.es/~polcom/>
-- GitHub: <https://github.com/Pol-Com>
+- GitHub: <https://github.com/Pol-Com-UGR>
 - Correo: <polcom@ugr.es>
 - Dirección: C/ Rector López Argueta s/n, 18071 Granada (España)

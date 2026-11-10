@@ -12,7 +12,7 @@
 
 # PolFace
 
-**PolFace: a tool for locating political figures on Spanish television.**
+**PolFace: a tool for locating political figures in television video** (debates, news, talk shows…; it works on any video and on the people you supply photos for).
 Software from the PolFace research project, developed by the **PolCom** research group (University of Granada).
 
 A research tool to **locate people in television video** and obtain **descriptive visibility measures** (estimated screen time, face size, co-appearances). You provide the videos and the photos of the people you want to find; the tool does the rest.
@@ -69,7 +69,7 @@ With `PolFace.sh --completo` (or `PolFace.bat completo`) transcription and senti
 Requires Python 3.9 or later.
 
 ```bash
-git clone https://github.com/Pol-Com/PolFace.git
+git clone https://github.com/Pol-Com-UGR/PolFace.git
 cd PolFace
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
@@ -201,7 +201,22 @@ The tests do not need to download any model: they use a simulated detector and a
 
 ## How to cite
 
-See [CITATION.cff](CITATION.cff). If you use the tool in a publication, please also cite InsightFace.
+If you use PolFace in a publication, please cite it as follows (GitHub also offers "Cite this repository" in the right-hand column, built from [CITATION.cff](CITATION.cff)):
+
+> García Marín, J. (2026). *PolFace: locating political figures in television video* (v0.1.0) [Software]. PolCom group, University of Granada. https://github.com/Pol-Com-UGR/PolFace
+
+```bibtex
+@software{garciamarin_polface_2026,
+  author  = {García Marín, Javier},
+  title   = {PolFace: locating political figures in television video},
+  year    = {2026},
+  version = {0.1.0},
+  url     = {https://github.com/Pol-Com-UGR/PolFace},
+  note    = {Project PID2021-128272NB-I00, MICIU/AEI/10.13039/501100011033 and FEDER, UE}
+}
+```
+
+Please also cite InsightFace.
 
 ## Licence
 
@@ -220,6 +235,6 @@ This work is part of project **PID2021-128272NB-I00**, funded by MICIU/AEI/10.13
 **Pol.Com (Political Communication)**, University of Granada: a research group studying how communication shapes political processes (traditional media, social media, polarisation, text-analysis and computer-vision algorithms, populism and election debates).
 
 - Web: <https://wpd.ugr.es/~polcom/>
-- GitHub: <https://github.com/Pol-Com>
+- GitHub: <https://github.com/Pol-Com-UGR>
 - Email: <polcom@ugr.es>
 - Address: C/ Rector López Argueta s/n, 18071 Granada (Spain)
