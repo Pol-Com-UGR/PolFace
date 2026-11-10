@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/financiacion.png" alt="Ministerio de Ciencia e Innovación · European Union, European Regional Development Fund · Agencia Estatal de Investigación" width="640">
+  <img src="assets/financiacion.png" alt="Ministerio de Ciencia, Innovación y Universidades · Co-funded by the European Union · Agencia Estatal de Investigación" width="640">
 </p>
 
 <p align="center"><sub>Project PID2021-128272NB-I00 funded by MICIU/AEI/10.13039/501100011033 and by ERDF, EU</sub></p>
@@ -245,7 +245,7 @@ Code under the MIT licence (see [LICENSE](LICENSE)). The InsightFace models have
 This work is part of project **PID2021-128272NB-I00**, funded by MICIU/AEI/10.13039/501100011033 and by ERDF, EU.
 
 <p align="center">
-  <img src="assets/financiacion.png" alt="Ministerio de Ciencia e Innovación · European Union, ERDF · Agencia Estatal de Investigación" width="480">
+  <img src="assets/financiacion.png" alt="Ministerio de Ciencia, Innovación y Universidades · Co-funded by the European Union · Agencia Estatal de Investigación" width="480">
 </p>
 
 ## Research group

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/financiacion.png" alt="Ministerio de Ciencia e Innovación · Unión Europea, Fondo Europeo de Desarrollo Regional · Agencia Estatal de Investigación" width="640">
+  <img src="assets/financiacion.png" alt="Ministerio de Ciencia, Innovación y Universidades · Cofinanciado por la Unión Europea · Agencia Estatal de Investigación" width="640">
 </p>
 
 <p align="center"><sub>Proyecto PID2021-128272NB-I00 financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE</sub></p>
@@ -249,7 +249,7 @@ Código bajo licencia MIT (ver [LICENSE](LICENSE)). Los modelos de InsightFace t
 Este trabajo forma parte del proyecto **PID2021-128272NB-I00**, financiado por MICIU/AEI/10.13039/501100011033 y por FEDER, UE.
 
 <p align="center">
-  <img src="assets/financiacion.png" alt="Ministerio de Ciencia e Innovación · Unión Europea, FEDER · Agencia Estatal de Investigación" width="480">
+  <img src="assets/financiacion.png" alt="Ministerio de Ciencia, Innovación y Universidades · Cofinanciado por la Unión Europea · Agencia Estatal de Investigación" width="480">
 </p>
 
 ## Grupo de investigación
