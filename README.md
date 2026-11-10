@@ -10,6 +10,8 @@
 
 <p align="center"><b>Español</b> · <a href="README.en.md">English</a></p>
 
+> 🇬🇧 **English version:** [README.en.md](README.en.md). PolFace locates political figures in television video from your own photos and videos, and gives descriptive visibility statistics and an interactive dashboard (Spanish/English).
+
 # PolFace
 
 **PolFace: herramienta de localización de figuras políticas en vídeo de televisión** (debates, informativos, programas…; funciona con cualquier vídeo y con las personas de las que aportes fotos).
@@ -205,11 +207,11 @@ Los tests no necesitan descargar modelos: usan un detector simulado y un vídeo 
 
 Si usas PolFace en una publicación, cítalo así (GitHub también ofrece «Citar este repositorio» en la columna derecha, a partir de [CITATION.cff](CITATION.cff)):
 
-> García Marín, J. (2026). *PolFace: localización de figuras políticas en vídeo de televisión* (v0.1.0) [Software]. Grupo PolCom, Universidad de Granada. https://github.com/Pol-Com-UGR/PolFace
+> García Marín, J., Luengo, Ó. G., & Serrano Contreras, I. J. (2026). *PolFace: localización de figuras políticas en vídeo de televisión* (v0.1.0) [Software]. Grupo PolCom, Universidad de Granada. https://github.com/Pol-Com-UGR/PolFace
 
 ```bibtex
 @software{garciamarin_polface_2026,
-  author  = {García Marín, Javier},
+  author  = {García Marín, Javier and Luengo, Óscar G. and Serrano Contreras, Ignacio Jesús},
   title   = {PolFace: localización de figuras políticas en vídeo de televisión},
   year    = {2026},
   version = {0.1.0},

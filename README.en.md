@@ -203,11 +203,11 @@ The tests do not need to download any model: they use a simulated detector and a
 
 If you use PolFace in a publication, please cite it as follows (GitHub also offers "Cite this repository" in the right-hand column, built from [CITATION.cff](CITATION.cff)):
 
-> García Marín, J. (2026). *PolFace: locating political figures in television video* (v0.1.0) [Software]. PolCom group, University of Granada. https://github.com/Pol-Com-UGR/PolFace
+> García Marín, J., Luengo, Ó. G., & Serrano Contreras, I. J. (2026). *PolFace: locating political figures in television video* (v0.1.0) [Software]. PolCom group, University of Granada. https://github.com/Pol-Com-UGR/PolFace
 
 ```bibtex
 @software{garciamarin_polface_2026,
-  author  = {García Marín, Javier},
+  author  = {García Marín, Javier and Luengo, Óscar G. and Serrano Contreras, Ignacio Jesús},
   title   = {PolFace: locating political figures in television video},
   year    = {2026},
   version = {0.1.0},

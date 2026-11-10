@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Si usas este software en una publicación, cítalo así."
+message: "If you use this software, please cite it as below. / Si usas este software en una publicación, cítalo así."
 title: "PolFace: localización de figuras políticas en vídeo de televisión"
 version: 0.1.0
 type: software
@@ -9,13 +9,22 @@ authors:
     given-names: "Javier"
     orcid: "https://orcid.org/0000-0002-2766-0266"
     affiliation: "Universidad de Granada, Facultad de Ciencias Políticas y Sociología (grupo PolCom)"
-# Añade aquí al resto de personas que hayan contribuido al código, con su ORCID si lo tienen.
+  - family-names: "Luengo"
+    given-names: "Óscar G."
+    affiliation: "Universidad de Granada (grupo PolCom)"
+  - family-names: "Serrano Contreras"
+    given-names: "Ignacio Jesús"
+    affiliation: "Universidad de Granada (grupo PolCom)"
+# Puedes añadir el ORCID de cada persona con la línea: orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
 repository-code: "https://github.com/Pol-Com-UGR/PolFace"
 # doi: "10.5281/zenodo.XXXXXXX"   # se obtiene al conectar el repositorio con Zenodo
 abstract: >-
   Herramienta de investigación para localizar personas en vídeo de televisión
   mediante reconocimiento facial y calcular descriptivos de visibilidad
   (tiempo estimado en pantalla, tamaño de la cara, coapariciones).
+  Research tool that locates people in television video using face
+  recognition and computes descriptive visibility statistics (estimated
+  screen time, face size, co-appearances).
 keywords:
   - comunicación política
   - televisión
